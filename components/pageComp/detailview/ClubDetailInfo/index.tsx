@@ -1,11 +1,10 @@
 import React, { useMemo } from "react";
 import dayjs from "dayjs";
-import { IDetail } from "pages/detailview/[_id]";
 import Title from "../Title";
 import SectionWrap from "../SectionWrap";
 import { ClubInfoTable } from "./style";
 
-function Index({ item }: IDetail) {
+function Index({ item }: any) {
   const {
     firstmeet,
     location,

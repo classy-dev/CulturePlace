@@ -9,7 +9,7 @@ import { Fragment, useCallback, useEffect, useState } from "react";
 import "rc-pagination/assets/index.css";
 import Pagination from "rc-pagination";
 import CardSkeleton from "@components/elements/Card/CardSkeleton";
-import { GetStaticPaths, GetStaticProps } from "next";
+import { GetServerSideProps, GetStaticPaths, GetStaticProps } from "next";
 import { dbConnect, Product } from "../../pages/api";
 import { dehydrate, QueryClient, useQuery } from "react-query";
 import { CategoryLink } from "@components/layouts/Head";
@@ -89,17 +89,20 @@ function Oneday({ SsrData }: { SsrData: IProductList }) {
     </Layout>
   );
 }
-export const getStaticPaths: GetStaticPaths = async () => {
-  const paths = CategoryLink.map(item => ({
-    params: { genre: String(item.url) }
-  }));
-  return {
-    paths,
-    fallback: "blocking"
-  };
-};
 
-export const getStaticProps: GetStaticProps = async ctx => {
+export default Oneday;
+
+// export const getStaticPaths: GetStaticPaths = async () => {
+//   const paths = CategoryLink.map(item => ({
+//     params: { genre: String(item.url) }
+//   }));
+//   return {
+//     paths,
+//     fallback: true // --> false 시 1,2,3외에는 404
+//   };
+// };
+
+export const getServerSideProps: GetServerSideProps = async ctx => {
   await dbConnect();
 
   const genre = ctx.params?.genre;
@@ -113,18 +116,14 @@ export const getStaticProps: GetStaticProps = async ctx => {
       .lean()
   );
 
-  const queryClient = new QueryClient();
-  await queryClient.prefetchQuery(["products", genre], () => ({
-    products: result,
-    productsCount: result.length
-  }));
+  // console.log("result result result", result);
 
   return {
     props: {
-      dehydratedState: dehydrate(queryClient)
-    },
-    revalidate: 60 // 60초마다 페이지 재생성
+      SsrData: {
+        products: JSON.parse(JSON.stringify(result)),
+        productsCount: 20
+      }
+    }
   };
 };
-
-export default Oneday;
