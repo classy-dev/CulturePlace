@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { GetServerSideProps } from "next";
 import { signIn, useSession } from "next-auth/client";
 import Link from "next/link";
 import { getProviders } from "next-auth/client";
@@ -17,8 +16,9 @@ import { ErrorTxt } from "pages/admin/product/styles";
 import "react-toastify/dist/ReactToastify.css";
 import useMediaUp from "@src/hooks/useMediaUp";
 import { userStore } from "@src/mobx/store";
+import { useQuery } from "react-query";
 
-export default function Register({ providers, csrfToken }: ISignIn) {
+export default function Register() {
   const {
     query: { callbackUrl }
   } = useRouter();
@@ -27,6 +27,7 @@ export default function Register({ providers, csrfToken }: ISignIn) {
   const [profileimg, onImgUpHandler] = useMediaUp("user");
 
   const [session] = useSession();
+  const { data: providers, isLoading } = useQuery("providers", getProviders);
 
   const {
     register,
@@ -83,6 +84,10 @@ export default function Register({ providers, csrfToken }: ISignIn) {
 
     setLoading(false);
   };
+
+  if (isLoading) {
+    return <div>Loading...</div>;
+  }
 
   return (
     <Layout>
@@ -281,18 +286,10 @@ export default function Register({ providers, csrfToken }: ISignIn) {
             </Link>
             , 내용을 확인하였고 동의합니다.
           </div>
-          <SocialLogin providers={providers} csrfToken={csrfToken} />
+          {providers && <SocialLogin providers={providers} />}
         </div>
       </RegisterForm>
       <ToastContainer />
     </Layout>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async context => {
-  const providers = await getProviders();
-
-  return {
-    props: { providers }
-  };
-};

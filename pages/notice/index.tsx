@@ -20,8 +20,6 @@ interface INoticeList {
 }
 
 function Index({ noticeData }: INoticeList) {
-  //불러오기
-
   const TabNoticeList = [
     "전체보기",
     "공지사항",
@@ -89,7 +87,7 @@ function Index({ noticeData }: INoticeList) {
   );
 }
 
-export async function getServerSideProps() {
+export async function getStaticProps() {
   const queryClient = new QueryClient();
   await dbConnect();
 
@@ -102,7 +100,8 @@ export async function getServerSideProps() {
     props: {
       dehydratedState: dehydrate(queryClient),
       noticeData
-    }
+    },
+    revalidate: 60
   };
 }
 

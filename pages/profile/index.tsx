@@ -1,5 +1,4 @@
 import { useEffect, useMemo, useState } from "react";
-import { GetServerSideProps } from "next";
 import { signIn, signOut, useSession } from "next-auth/client";
 import Link from "next/link";
 import { getProviders } from "next-auth/client";
@@ -18,7 +17,7 @@ import "react-toastify/dist/ReactToastify.css";
 import useMediaUp from "@src/hooks/useMediaUp";
 import { css } from "@emotion/react";
 
-export default function Register({ providers, csrfToken }: ISignIn) {
+export default function Register() {
   const {
     query: { callbackUrl }
   } = useRouter();
@@ -302,11 +301,3 @@ export default function Register({ providers, csrfToken }: ISignIn) {
     </Layout>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async context => {
-  const providers = await getProviders();
-
-  return {
-    props: { providers }
-  };
-};

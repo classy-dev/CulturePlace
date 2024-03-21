@@ -14,7 +14,7 @@ import {
 
 export interface ISignIn {
   providers: object;
-  csrfToken: string;
+  csrfToken?: string;
 }
 
 export default function SignIn() {
