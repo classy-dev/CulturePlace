@@ -1,6 +1,8 @@
+import { useEffect } from "react";
 import Link from "next/link";
 import { getProviders, getCsrfToken, CtxOrReq } from "next-auth/client";
 import { useRouter } from "next/router";
+import { useQuery } from "react-query";
 import { SignInSeo } from "@components/elements/CommonSeo";
 import SocialLogin from "../components/modules/SocialLogin";
 import MobMenu from "@components/layouts/MobMenu";
@@ -9,29 +11,36 @@ import {
   InfoRegArea,
   LoginWrapper
 } from "@components/pageComp/signin/style";
-import { useEffect, useRef } from "react";
 
 export interface ISignIn {
   providers: object;
   csrfToken: string;
 }
 
-export default function SignIn({ providers, csrfToken }: ISignIn) {
+export default function SignIn() {
   const router = useRouter();
-  const timer = useRef<any>();
   const { error } = router?.query;
+
+  const { data: providers, isLoading: isProvidersLoading } = useQuery(
+    "providers",
+    () => getProviders()
+  );
+
+  const { data: csrfToken, isLoading: isCsrfTokenLoading } = useQuery(
+    "csrfToken",
+    () => getCsrfToken()
+  );
 
   useEffect(() => {
     if (typeof window !== "undefined" && error === "CredentialsSignin") {
-      timer.current = setTimeout(
-        () => alert("아이디와 비밀번호를 확인해주세요."),
-        500
-      );
+      alert("아이디와 비밀번호를 확인해주세요.");
     }
-    return () => {
-      clearTimeout(timer.current);
-    };
-  }, []);
+  }, [error]);
+
+  if (isProvidersLoading || isCsrfTokenLoading) {
+    return <div>Loading...</div>;
+  }
+
   return (
     <>
       <SignInSeo />
@@ -41,13 +50,18 @@ export default function SignIn({ providers, csrfToken }: ISignIn) {
             <h1>CULTURE PLACE</h1>
             <h2>로그인</h2>
             <div>
-              <SocialLogin providers={providers} csrfToken={csrfToken} />
+              {providers && csrfToken && (
+                <SocialLogin providers={providers} csrfToken={csrfToken} />
+              )}
+
               <form method="post" action="/api/auth/callback/credentials">
-                <input
-                  name="csrfToken"
-                  type="hidden"
-                  defaultValue={csrfToken}
-                />
+                {csrfToken && (
+                  <input
+                    name="csrfToken"
+                    type="hidden"
+                    defaultValue={csrfToken}
+                  />
+                )}
                 <label>
                   <div className="tit">이메일</div>
                   <div>
@@ -96,15 +110,4 @@ export default function SignIn({ providers, csrfToken }: ISignIn) {
       <MobMenu />
     </>
   );
-}
-
-// This is the recommended way for Next.js 9.3 or newer
-export async function getServerSideProps(context: CtxOrReq | undefined) {
-  const providers = await getProviders();
-  return {
-    props: {
-      csrfToken: await getCsrfToken(context),
-      providers
-    }
-  };
 }

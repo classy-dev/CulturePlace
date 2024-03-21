@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 import { dbConnect, Product, Notice } from "../pages/api";
 import { dehydrate, QueryClient } from "react-query";
 import { useProductsMain } from "@src/hooks/api/useProducts/useProductsMain";
@@ -121,7 +121,7 @@ const Home = ({ SsrData }: ISSR) => {
   );
 };
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const queryClient = new QueryClient();
   await dbConnect();
 
@@ -159,7 +159,8 @@ export const getServerSideProps: GetServerSideProps = async () => {
     props: {
       dehydratedState: dehydrate(queryClient),
       SsrData
-    }
+    },
+    revalidate: 60
   };
 };
 
