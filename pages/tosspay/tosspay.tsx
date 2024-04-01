@@ -16,8 +16,8 @@ function Tosspay() {
         orderId: `${randomId}`, // 주문 id
         orderName: `gagyeong`, // 결제 이름
         customerName: `설레임`, // 판매자, 판매처 이름
-        successUrl: "http://localhost:3000/tosspay/success", // 성공시 리다이렉트 주소
-        failUrl: "http://localhost:3000/tosspay/failed" // 실패시 리다이렉트 주소
+        successUrl: "https://cultureplace.seolleim.kr/tosspay/success", // 성공시 리다이렉트 주소
+        failUrl: "https://cultureplace.seolleim.kr/tosspay/failed" // 실패시 리다이렉트 주소
       });
     });
   };
