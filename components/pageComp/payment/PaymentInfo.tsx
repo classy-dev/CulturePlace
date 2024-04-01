@@ -67,16 +67,16 @@ function PaymentInfo({ data, session, coachId }: IPaymentInfo) {
               `YY.MM.DD (ddd)`
             )}`, // 결제 이름
             customerName: `컬쳐플레이스`, // 판매자, 판매처 이름
-            successUrl: `http://localhost:3000/payment/success?productId=${data._id}&coachId=${coachId}`, // 성공시 리다이렉트 주소
-            failUrl: "http://localhost:3000/payment/failed" // 실패시 리다이렉트 주소
+            successUrl: `https://cultureplace.seolleim.kr/payment/success?productId=${data._id}&coachId=${coachId}`, // 성공시 리다이렉트 주소
+            failUrl: "https://cultureplace.seolleim.kr/payment/failed" // 실패시 리다이렉트 주소
           }
         : {
             amount: data?.saleprice ? data?.saleprice : data?.price, // 가격
             orderId: `${randomId}`, // 주문 id
             orderName: data?.title, // 결제 이름
             customerName: `컬쳐플레이스`, // 판매자, 판매처 이름
-            successUrl: `http://localhost:3000/payment/success?productId=${data._id}`, // 성공시 리다이렉트 주소
-            failUrl: "http://localhost:3000/payment/failed" // 실패시 리다이렉트 주소
+            successUrl: `https://cultureplace.seolleim.kr/payment/success?productId=${data._id}`, // 성공시 리다이렉트 주소
+            failUrl: "https://cultureplace.seolleim.kr/payment/failed" // 실패시 리다이렉트 주소
           };
 
     loadTossPayments(clientKey).then(tossPayments => {
