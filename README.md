@@ -1,16 +1,49 @@
-# 🎭 컬처플레이스 (CulturePlace)
+# 컬처플레이스 (CulturePlace)
 
 ![컬처플레이스](public/images/portfolio/thumb1.png)
+Full Responsive Web Design
+
+----
+
+![컬처플레이스](public/images/portfolio/thumb3.png)
+메인화면
 
 ----
 
 ![컬처플레이스](public/images/portfolio/thumb2.png)
-![컬처플레이스](public/images/portfolio/thumb3.png)
+로그인 - 소셜로그인 & 이메일 로그인 (NextAuth)
+
+----
+
 ![컬처플레이스](public/images/portfolio/thumb4.png)
+상품 - 조합&필터
+
+----
+
 ![컬처플레이스](public/images/portfolio/thumb5.png)
+상품 - 상세페이지
+
+----
+
 ![컬처플레이스](public/images/portfolio/thumb6.png)
+상품 - VOD 
+
+----
+
 ![컬처플레이스](public/images/portfolio/thumb7.png)
+상품 - 커뮤니티 / Q&A 
+
+----
+
+![컬처플레이스](public/images/portfolio/thumb9.png)
+LIVE STREAMING
+
+----
+
 ![컬처플레이스](public/images/portfolio/thumb8.png)
+결제
+
+----
 
 컬처플레이스는 사용자들에게 다양한 문화 경험과 활동을 연결해주는 종합 온라인 플랫폼입니다. 미술 수업부터 댄스 워크샵, 음악 레슨, 연극 공연까지, 이 플랫폼은 사용자들이 자신의 관심사에 맞는 문화 활동을 발견하고, 예약하고, 참여할 수 있게 해줍니다.
 
