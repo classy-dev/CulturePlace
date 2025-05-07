@@ -4,47 +4,47 @@
 <div>
 
 <div>
-  <img src="public/images/portfolio/thumb1.png" alt="반응형 웹 디자인" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb1.png" alt="반응형 웹 디자인" style="border-radius: 8px;">
   <div align="center">반응형 웹 디자인</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb3.png" alt="메인 화면" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb3.png" alt="메인 화면" style="border-radius: 8px;">
   <div align="center">메인 화면</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb2.png" alt="로그인 시스템" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb2.png" alt="로그인 시스템" style="border-radius: 8px;">
   <div align="center">소셜/이메일 로그인 (NextAuth)</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb4.png" alt="상품 필터링" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb4.png" alt="상품 필터링" style="border-radius: 8px;">
   <div align="center">상품 조합 & 필터</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb5.png" alt="상품 상세페이지" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb5.png" alt="상품 상세페이지" style="border-radius: 8px;">
   <div align="center">상품 상세페이지</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb6.png" alt="VOD 플레이어" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb6.png" alt="VOD 플레이어" style="border-radius: 8px;">
   <div align="center">VOD 콘텐츠</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb7.png" alt="커뮤니티" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb7.png" alt="커뮤니티" style="border-radius: 8px;">
   <div align="center">커뮤니티 & Q&A</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb9.png" alt="라이브 스트리밍" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb9.png" alt="라이브 스트리밍" style="border-radius: 8px;">
   <div align="center">라이브 스트리밍</div>
 </div>
-
+###
 <div>
-  <img src="public/images/portfolio/thumb8.png" alt="결제 시스템" style="border-radius: 8px; max-width: 100%;">
+  <img src="public/images/portfolio/thumb8.png" alt="결제 시스템" style="border-radius: 8px;">
   <div align="center">결제 시스템</div>
 </div>
 
