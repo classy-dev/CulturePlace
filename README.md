@@ -12,7 +12,7 @@
   <img src="public/images/portfolio/thumb3.png" alt="메인 화면" style="border-radius: 8px;">
 </div>
 
-## 로그인 시스템
+## 로그인 시스템 - 소셜로그인, 이메일로그인
 
 <div>
   <img src="public/images/portfolio/thumb2.png" alt="로그인 시스템" style="border-radius: 8px;">
