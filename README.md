@@ -1,63 +1,54 @@
 # 컬처플레이스 (CulturePlace)
 
 ## Full Resonsive Web Design
---------
 
 <div>
   <img src="public/images/portfolio/thumb1.png" alt="반응형 웹 디자인" style="border-radius: 8px;">
 </div>
 
 ## 메인 화면
---------
 
 <div>
   <img src="public/images/portfolio/thumb3.png" alt="메인 화면" style="border-radius: 8px;">
 </div>
 
 ## 로그인 시스템
---------
 
 <div>
   <img src="public/images/portfolio/thumb2.png" alt="로그인 시스템" style="border-radius: 8px;">
 </div>
 
 ## 상품 조합 & 필터
---------
 
 <div>
   <img src="public/images/portfolio/thumb4.png" alt="상품 필터링" style="border-radius: 8px;">
 </div>
 
 ## 상품 상세페이지
---------
 
 <div>
   <img src="public/images/portfolio/thumb5.png" alt="상품 상세페이지" style="border-radius: 8px;">
 </div>
 
 ## VOD 플레이어
---------
 
 <div>
   <img src="public/images/portfolio/thumb6.png" alt="VOD 플레이어" style="border-radius: 8px;">
 </div>
 
 ## 커뮤니티 & Q&A
---------
 
 <div>
   <img src="public/images/portfolio/thumb7.png" alt="커뮤니티" style="border-radius: 8px;">
 </div>
 
 ## 라이브 스트리밍
---------
 
 <div>
   <img src="public/images/portfolio/thumb9.png" alt="라이브 스트리밍" style="border-radius: 8px;">
 </div>
 
 ## 결제 시스템
---------
 
 <div>
   <img src="public/images/portfolio/thumb8.png" alt="결제 시스템" style="border-radius: 8px;">
