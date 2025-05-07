@@ -1,68 +1,69 @@
 # 컬처플레이스 (CulturePlace)
 
-## 🎨 UI 데모
-<div>
+## Full Resonsive Web Design
+--------
 
 <div>
   <img src="public/images/portfolio/thumb1.png" alt="반응형 웹 디자인" style="border-radius: 8px;">
-  <div align="center">반응형 웹 디자인</div>
 </div>
 
-###
+## 메인 화면
+--------
 
 <div>
   <img src="public/images/portfolio/thumb3.png" alt="메인 화면" style="border-radius: 8px;">
-  <div align="center">메인 화면</div>
 </div>
 
-###
+## 로그인 시스템
+--------
 
 <div>
   <img src="public/images/portfolio/thumb2.png" alt="로그인 시스템" style="border-radius: 8px;">
-  <div align="center">소셜/이메일 로그인 (NextAuth)</div>
 </div>
+
+## 상품 조합 & 필터
+--------
 
 <div>
   <img src="public/images/portfolio/thumb4.png" alt="상품 필터링" style="border-radius: 8px;">
-  <div align="center">상품 조합 & 필터</div>
 </div>
 
-###
+## 상품 상세페이지
+--------
 
 <div>
   <img src="public/images/portfolio/thumb5.png" alt="상품 상세페이지" style="border-radius: 8px;">
-  <div align="center">상품 상세페이지</div>
 </div>
 
-###
+## VOD 플레이어
+--------
 
 <div>
   <img src="public/images/portfolio/thumb6.png" alt="VOD 플레이어" style="border-radius: 8px;">
-  <div align="center">VOD 콘텐츠</div>
 </div>
 
-###
+## 커뮤니티 & Q&A
+--------
 
 <div>
   <img src="public/images/portfolio/thumb7.png" alt="커뮤니티" style="border-radius: 8px;">
-  <div align="center">커뮤니티 & Q&A</div>
 </div>
 
-###
+## 라이브 스트리밍
+--------
 
 <div>
   <img src="public/images/portfolio/thumb9.png" alt="라이브 스트리밍" style="border-radius: 8px;">
-  <div align="center">라이브 스트리밍</div>
 </div>
 
-###
+## 결제 시스템
+--------
 
 <div>
   <img src="public/images/portfolio/thumb8.png" alt="결제 시스템" style="border-radius: 8px;">
-  <div align="center">결제 시스템</div>
 </div>
 
-</div>
+
 
 컬처플레이스는 사용자들에게 다양한 문화 경험과 활동을 연결해주는 종합 온라인 플랫폼입니다. 미술 수업부터 댄스 워크샵, 음악 레슨, 연극 공연까지, 이 플랫폼은 사용자들이 자신의 관심사에 맞는 문화 활동을 발견하고, 예약하고, 참여할 수 있게 해줍니다.
 
