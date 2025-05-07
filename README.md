@@ -1,49 +1,54 @@
 # 컬처플레이스 (CulturePlace)
 
-![컬처플레이스](public/images/portfolio/thumb1.png)
-Full Responsive Web Design
+## 🎨 UI 데모
+<div>
 
-----
+<div>
+  <img src="public/images/portfolio/thumb1.png" alt="반응형 웹 디자인" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">반응형 웹 디자인</p>
+</div>
 
-![컬처플레이스](public/images/portfolio/thumb3.png)
-메인화면
+<div>
+  <img src="public/images/portfolio/thumb3.png" alt="메인 화면" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">메인 화면</p>
+</div>
 
-----
+<div>
+  <img src="public/images/portfolio/thumb2.png" alt="로그인 시스템" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">소셜/이메일 로그인 (NextAuth)</p>
+</div>
 
-![컬처플레이스](public/images/portfolio/thumb2.png)
-로그인 - 소셜로그인 & 이메일 로그인 (NextAuth)
+<div>
+  <img src="public/images/portfolio/thumb4.png" alt="상품 필터링" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">상품 조합 & 필터</p>
+</div>
 
-----
+<div>
+  <img src="public/images/portfolio/thumb5.png" alt="상품 상세페이지" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">상품 상세페이지</p>
+</div>
 
-![컬처플레이스](public/images/portfolio/thumb4.png)
-상품 - 조합&필터
+<div>
+  <img src="public/images/portfolio/thumb6.png" alt="VOD 플레이어" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">VOD 콘텐츠</p>
+</div>
 
-----
+<div>
+  <img src="public/images/portfolio/thumb7.png" alt="커뮤니티" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">커뮤니티 & Q&A</p>
+</div>
 
-![컬처플레이스](public/images/portfolio/thumb5.png)
-상품 - 상세페이지
+<div>
+  <img src="public/images/portfolio/thumb9.png" alt="라이브 스트리밍" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">라이브 스트리밍</p>
+</div>
 
-----
+<div>
+  <img src="public/images/portfolio/thumb8.png" alt="결제 시스템" style="border-radius: 8px; max-width: 100%;">
+  <p style="text-align: center; margin-top: 8px; font-weight: 500;">결제 시스템</p>
+</div>
 
-![컬처플레이스](public/images/portfolio/thumb6.png)
-상품 - VOD 
-
-----
-
-![컬처플레이스](public/images/portfolio/thumb7.png)
-상품 - 커뮤니티 / Q&A 
-
-----
-
-![컬처플레이스](public/images/portfolio/thumb9.png)
-LIVE STREAMING
-
-----
-
-![컬처플레이스](public/images/portfolio/thumb8.png)
-결제
-
-----
+</div>
 
 컬처플레이스는 사용자들에게 다양한 문화 경험과 활동을 연결해주는 종합 온라인 플랫폼입니다. 미술 수업부터 댄스 워크샵, 음악 레슨, 연극 공연까지, 이 플랫폼은 사용자들이 자신의 관심사에 맞는 문화 활동을 발견하고, 예약하고, 참여할 수 있게 해줍니다.
 
